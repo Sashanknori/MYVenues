@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="EntitiesBuilder">
+		<class>model.CustomerAddress</class>
+		<class>model.CustomerAddressPK</class>
+		<class>model.CustomerAlert</class>
+		<class>model.CustomerAlertPK</class>
+		<class>model.CustomerEmail</class>
+		<class>model.CustomerEmailPK</class>
+		<class>model.CustomerIdentifier</class>
+		<class>model.CustomerIdentifierPK</class>
+		<class>model.CustomerNameDetail</class>
+		<class>model.CustomerNameDetailPK</class>
+		<class>model.CustomerPhone</class>
+		<class>model.CustomerPhonePK</class>
+		<class>model.EventSupportDetail</class>
+		<class>model.EventSupportDetailPK</class>
+		<class>model.OrganizationAvailability</class>
+		<class>model.OrganizationAvailabilityPK</class>
+		<class>model.OrganizationConstraint</class>
+		<class>model.OrganizationConstraintPK</class>
+		<class>model.OrganizationDetail</class>
+		<class>model.OrganizationFaq</class>
+		<class>model.OrganizationFaqPK</class>
+		<class>model.OrganizationImage</class>
+		<class>model.OrganizationImagePK</class>
+		<class>model.OrganizationMapper</class>
+		<class>model.OrganizationMapperPK</class>
+	</persistence-unit>
+</persistence>
