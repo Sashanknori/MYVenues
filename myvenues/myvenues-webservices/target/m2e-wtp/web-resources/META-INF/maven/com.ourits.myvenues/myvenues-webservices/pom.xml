@@ -14,5 +14,15 @@
 			<artifactId>javaee-api</artifactId>
 			<version>7.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.ourits.myvenues</groupId>
+			<artifactId>myvenues-schema</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ourits.myvenues</groupId>
+			<artifactId>myvenues-businesslayer</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

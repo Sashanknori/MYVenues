@@ -6,4 +6,11 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>myvenues-dao</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.ourits.myvenues</groupId>
+  		<artifactId>myvenues-entities</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
