@@ -6,9 +6,35 @@
 	version="2.0">
 
 	<persistence-unit name="myvenues" transaction-type="JTA">
-		<provider>org.apache.openjpa.persistence.PersistenceProvideImpl</provider>
-		<jta-data-source>myvenuesDatabse</jta-data-source>
+		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+		<jta-data-source>myvenuesDatabase</jta-data-source>
+		<!-- All entity classes -->
+		<class>com.ourits.myvenues.entities.CustomerAddress</class>
+		<class>com.ourits.myvenues.entities.CustomerAddressPK</class>
+		<class>com.ourits.myvenues.entities.CustomerAlert</class>
+		<class>com.ourits.myvenues.entities.CustomerAlertPK</class>
+		<class>com.ourits.myvenues.entities.CustomerEmail</class>
+		<class>com.ourits.myvenues.entities.CustomerEmailPK</class>
 		<class>com.ourits.myvenues.entities.CustomerIdentifier</class>
+		<class>com.ourits.myvenues.entities.CustomerIdentifierPK</class>
+		<class>com.ourits.myvenues.entities.CustomerNameDetail</class>
+		<class>com.ourits.myvenues.entities.CustomerNameDetailPK</class>
+		<class>com.ourits.myvenues.entities.CustomerPhone</class>
+		<class>com.ourits.myvenues.entities.CustomerPhonePK</class>
+		<class>com.ourits.myvenues.entities.EventSupportDetail</class>
+		<class>com.ourits.myvenues.entities.EventSupportDetailPK</class>
+		<class>com.ourits.myvenues.entities.OrganizationAvailability</class>
+		<class>com.ourits.myvenues.entities.OrganizationAvailabilityPK</class>
+		<class>com.ourits.myvenues.entities.OrganizationConstraint</class>
+		<class>com.ourits.myvenues.entities.OrganizationConstraintPK</class>
+		<class>com.ourits.myvenues.entities.OrganizationDetail</class>
+		<class>com.ourits.myvenues.entities.OrganizationFaq</class>
+		<class>com.ourits.myvenues.entities.OrganizationFaqPK</class>
+		<class>com.ourits.myvenues.entities.OrganizationImage</class>
+		<class>com.ourits.myvenues.entities.OrganizationImagePK</class>
+		<class>com.ourits.myvenues.entities.OrganizationMapper</class>
+		<class>com.ourits.myvenues.entities.OrganizationMapperPK</class>
+
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		<validation-mode>NONE</validation-mode>
 		<properties>

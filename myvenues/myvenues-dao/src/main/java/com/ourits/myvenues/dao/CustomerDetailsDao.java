@@ -5,7 +5,6 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceContextType;
 import javax.persistence.Query;
 
 import com.ourits.myvenues.entities.CustomerIdentifier;
@@ -14,10 +13,11 @@ import com.ourits.myvenues.entities.CustomerIdentifier;
 @SuppressWarnings("unchecked")
 public class CustomerDetailsDao {
 
-	@PersistenceContext(unitName = "myvenues", type = PersistenceContextType.TRANSACTION)
+	@PersistenceContext(unitName = "myvenues")
 	private EntityManager entityManager;
 
 	public List<CustomerIdentifier> retrieveAllCustomers() {
+		System.out.println("********************");
 		final Query query = entityManager
 				.createNamedQuery("SELECT customerDetails from CustomerIdentifier as customerDetails");
 		return query.getResultList();
