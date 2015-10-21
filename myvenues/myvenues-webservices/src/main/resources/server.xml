@@ -1,31 +1,35 @@
-<!-- <server description="new server">
+<server description="MyVenues server">
 
-	Enable features
-	<featureManager>
-		<feature>webProfile-7.0</feature>
-		<feature>localConnector-1.0</feature>
+	<!-- Enable features -->
+	<featureManager onError="WARN">
+		<feature>jaxrs-1.1</feature>
+		<feature>jdbc-4.0</feature>
 		<feature>jndi-1.0</feature>
-		<feature>jdbc-4.1</feature>
-		<feature>jaxrs-2.0</feature>
-		<feature>jpa-2.1</feature>
+		<feature>jpa-2.0</feature>
+		<feature>localConnector-1.0</feature>
+		<feature>servlet-3.0</feature>
+		<feature>ejbLite-3.1</feature>
 	</featureManager>
 
-	To access this server from a remote client add a host attribute to 
-		the following element, e.g. host="*"
-	<httpEndpoint httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
+	<!-- To access this server from a remote client add a host attribute to 
+		the following element, e.g. host="*" -->
+	<httpEndpoint httpPort="9080" httpsPort="9443"
+		id="defaultHttpEndpoint" />
 
 	<dataSource id="myvenuesDatabase" jndiName="myvenuesDatabase">
-		<jdbcDriver javax.sql.DataSource="com.mysql.jdbc.Driver" libraryRef="MySQLLib"/>
-		<properties databaseName="MYVENUES" password="root" portNumber="3306" serverName="localhost" user="root"/>
+		<jdbcDriver javax.sql.DataSource="com.mysql.jdbc.Driver"
+			libraryRef="MySQLLib" />
+		<properties databaseName="MYVENUES" password="root"
+			portNumber="3306" serverName="localhost" user="root" />
 	</dataSource>
 
 	<library id="MySQLLib">
-		<fileset dir="/home/sashank/Softwares/mysql-connector" includes="*.jar"/>
+		<fileset dir="/home/sashank/Softwares/mysql-connector"
+			includes="*.jar" />
 	</library>
 
+	<!-- <webApplication id="myvenues-webservices" location="myvenues-webservices.war"
+		name="myvenues-webservices" /> -->
 
-
-	<applicationMonitor updateTrigger="mbean"/>
-
-    <webApplication id="myvenues-webservices" location="myvenues-webservices.war" name="myvenues-webservices"/>
-</server> -->
+	<applicationMonitor updateTrigger="mbean" />
+</server>

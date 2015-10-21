@@ -19,7 +19,7 @@ public class CustomerDetailsDao {
 	public List<CustomerIdentifier> retrieveAllCustomers() {
 		System.out.println("********************");
 		final Query query = entityManager
-				.createNamedQuery("SELECT customerDetails from CustomerIdentifier as customerDetails");
+				.createNamedQuery("CustomerIdentifier.findAll");
 		return query.getResultList();
 
 	}

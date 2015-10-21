@@ -15,6 +15,7 @@ public class CustomerRetrievalBusinessService {
 	CustomerDetailsDao customerDetailsDao;
 
 	public void processCustomerDetailsRetrieval() {
+		System.out.println("******************");
 		List<CustomerIdentifier> customerDetailsList = customerDetailsDao.retrieveAllCustomers();
 		for (final CustomerIdentifier customerIdentifier : customerDetailsList) {
 			System.out.println(customerIdentifier.getId().getCustomerId() + "---->"
