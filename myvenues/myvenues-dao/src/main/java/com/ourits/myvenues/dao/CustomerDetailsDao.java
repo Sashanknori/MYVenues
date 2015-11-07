@@ -18,10 +18,14 @@ public class CustomerDetailsDao {
 
 	public List<CustomerIdentifier> retrieveAllCustomers() {
 		System.out.println("********************");
-		final Query query = entityManager
-				.createNamedQuery("CustomerIdentifier.findAll");
+		final Query query = entityManager.createNamedQuery("CustomerIdentifier.findAll");
 		return query.getResultList();
 
+	}
+
+	public void persistCustomerIdentifierDetails(CustomerIdentifier customerIdentifier) {
+		entityManager.persist(customerIdentifier);
+		System.out.println("persisted");
 	}
 
 }

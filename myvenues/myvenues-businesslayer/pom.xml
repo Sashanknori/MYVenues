@@ -19,5 +19,10 @@
 			<artifactId>myvenues-dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.ourits.myvenues</groupId>
+			<artifactId>myvenues-schema</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
