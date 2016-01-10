@@ -1,1 +1,7 @@
+com/ourits/myvenues/schema/request/layouts/OperationType.class
+com/ourits/myvenues/schema/request/layouts/CustomerOnboardingDetailsRequest.class
+com/ourits/myvenues/schema/request/layouts/OrganizationOnboardingDetailsRequest.class
+com/ourits/myvenues/schema/request/layouts/TransactionStatusSchema.class
+com/ourits/myvenues/schema/request/layouts/OnboardingDetailsRequest.class
+com/ourit/myvenues/schema/helpers/TimestampAdapter.class
 com/ourit/myvenues/schema/helpers/TransactionStatusSchema.class

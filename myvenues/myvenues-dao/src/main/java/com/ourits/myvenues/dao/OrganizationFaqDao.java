@@ -7,24 +7,23 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import com.ourits.myvenues.entities.CustomerIdentifier;
+import com.ourits.myvenues.entities.OrganizationFaq;
 
 @Stateless
-@SuppressWarnings("unchecked")
-public class CustomerDetailsDao {
+public class OrganizationFaqDao {
 
 	@PersistenceContext(unitName = "myvenues")
 	private EntityManager entityManager;
 
-	public List<CustomerIdentifier> retrieveAllCustomers() {
+	public List<OrganizationFaq> retrieveAllOrganizationFaqDetails() {
 		System.out.println("********************");
-		final Query query = entityManager.createNamedQuery("CustomerIdentifier.findAll");
+		final Query query = entityManager.createNamedQuery("OrganizationFaq.findAll");
 		return query.getResultList();
 
 	}
 
-	public void persistCustomerIdentifierDetails(CustomerIdentifier customerIdentifier) {
-		entityManager.persist(customerIdentifier);
+	public void persistOrganizationFaqDetails(OrganizationFaq organizationFaq) {
+		entityManager.persist(organizationFaq);
 		System.out.println("persisted");
 	}
 

@@ -27,7 +27,6 @@ public class MyvenuesRetrieveRouter {
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.TEXT_HTML, MediaType.TEXT_XML })
 	public void retrieveCustomerDetails() {
 		logger.debug("Entering retrieveCustomerDetails with parameters : {}");
-		System.out.println(customerRetrievalBusinessService);
 		customerRetrievalBusinessService.processCustomerDetailsRetrieval();
 		logger.debug("Exiting retrieveCustomerDetails with parameters : {}");
 
